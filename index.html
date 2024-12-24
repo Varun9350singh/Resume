@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>varun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/4321.png" width="50px" height="50px" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>B-TECH Computer Science Engineering Student</p>
+                <h1>Hi, I'm <span>Varun Singh</span> <br> from Maharaja Agrasen Institute of Technology (MAIT)</h1>
+            </div>
+        </div>
+    </div>
+    <div id ="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/1324.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a motivated B.Tech CSE student, I thrive on merging theoretical knowledge with practical skills in Data Structures and Algorithms, alongside proficiency in C++. Eager to explore the dynamic realms of Game Development and Cybersecurity, I am actively honing my skills in Unreal Engine for innovative projects. Committed to continuous learning and driven by a passion for technology, I aspire to contribute meaningfully to the ever-evolving landscape of computer science</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">projects </p>
+                        <p class="tab-links"onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>WEB Development</span><br>HTML,CSS,JS</li>
+                            <li><span>Game Development</span><br>Unreal Engine</li>
+                            <li><span>Language</span><br>DSA in C++,Python,JAVA</li>
+                            <li><span>sound Enginer</span><br>FL Studio</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>ffdsfv</span><br>vbcbvc</li>
+                            <li><span>Student</span><br>BBA</li>
+                            <li><span>Stxcbb</span><br>BvbxfbBA</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Studfdbfsdent</span><br>fdfdsbdBBA</li>
+                            <li><span>Studedfbdsbnt</span><br>asffaBBA</li>
+                            <li><span>Studentdfgssg</span><br>BBAgdrsh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
